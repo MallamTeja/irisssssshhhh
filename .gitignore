@@ -1,0 +1,10 @@
+# Local Python virtualenv: 24k machine-specific files, rebuilt from pip, never shared
+.venv/
+# Bytecode caches Python regenerates on every run
+__pycache__/
+# Trained checkpoints (best_model_real.pt etc.) are large binaries; GitHub rejects files over 100 MB
+*.pt
+# Claude Code "remember" plugin session logs: personal tool state, not project code
+.remember/
+# Local secrets file, if the ngrok token ever moves out of the env var into one
+.env
